@@ -1,0 +1,25 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+p {
+    margin: 15px;
+}
+.nav {
+    background: azure;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
