@@ -6,6 +6,8 @@
 $(document).ready(function() {
 
 
+    var paragraphs = $("p");
+    var links = $(".nav a")
 
     var menu = $("#mainMenu");
     var lastPositionTop = 0;
@@ -38,6 +40,35 @@ $(document).ready(function() {
         }, 500);
             //menu.removeAttr("style");
         }
+
+
+        paragraphs.each(function( index ){
+           if(index + 1 >= this.length){
+               if ( ( paragraphs.eq(index) ).offset().top() < $(window).scrollTop() ) {
+
+                   links.eq(index).addClass("active");
+
+               }
+               else {
+                   links.eq(index).removeClass("active");
+               }
+
+
+
+           }
+           else {
+
+               if ( paragraphs.eq(index).offset().top < $(window).scrollTop() &&
+                    paragraphs.eq(index + 1).offset().top > $(window).scrollTop()) {
+
+                    links.eq(index).addClass("active");
+
+                }
+                else {
+                    links.eq(index).removeClass("active");
+                }
+            }
+         });
 
 
     });
