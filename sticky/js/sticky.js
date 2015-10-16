@@ -6,7 +6,7 @@
 $(document).ready(function() {
 
 
-    var paragraphs = $("p");
+    var paragraphs = $("p[id]");
     var links = $(".nav a")
 
     var menu = $("#mainMenu");
