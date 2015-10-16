@@ -1,0 +1,56 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainNav {
+    width: 100%;
+    display: block;
+    height: 60px;
+    background-color: indianred;
+}
+
+ul {
+    width: 33.33%;
+    float: left;
+    height: 60px;
+    text-align: center;
+}
+
+.mainNav p {
+    line-height: 60px;
+}
+
+li {
+    list-style-type: none;
+    line-height: 60px;
+    text-align: center;
+    border: 1px dotted grey;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+
+a:hover, a:focus, a:active {
+    background-color: cornsilk;
+}
+
+.dropdown1, .dropdown2, .dropdown3 {
+    display: none;
+}
+
+.main1 {
+    position: relative;
+}
+
+.look {
+    position: absolute;
+    top: 60px;
+}
+
